@@ -3,13 +3,10 @@ import { NgModule } from '@angular/core';
 
 
 import { AppComponent } from './app.component';
-import { InitializerComponent } from './initializer/initializer.component';
-
 
 @NgModule({
   declarations: [
     AppComponent,
-    InitializerComponent
   ],
   imports: [
     BrowserModule

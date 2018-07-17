@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import {initClass} from "./initRunner/initClass";
+import { initClass } from "./runner/initClass";
 
 @Component({
   selector: 'app-root',
@@ -7,10 +7,18 @@ import {initClass} from "./initRunner/initClass";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
+
   title = 'Dashboard';
 
-  initialRunner: initClass = {
-    id: 1,
-    name: "T.K."
-  };
+  constructor() {
+
+    var obj = new initClass();
+    obj.id = 0;
+    obj.name = "t.k."
+    obj.callShellScript();
+
+  }
+
+
+
 }
