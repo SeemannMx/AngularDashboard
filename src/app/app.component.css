@@ -11,6 +11,7 @@
 
 .col-sm-3 {
   /*background-color: lightseagreen;*/
+  width: 100%;
 }
 
 .list-group {
@@ -44,11 +45,12 @@
   /*background-color: lightsteelblue;*/
   border: 1px solid whitesmoke;
   border-radius: 0.5vw;
-
 }
 
 .card-text {
- text-align: center;
+  text-align: center;
+  font-size: 1.2vw;
+
 }
 
 #right {
@@ -67,5 +69,21 @@
   to {
     padding-left: 3vw;
     color: lightskyblue;
+  }
+}
+
+@media screen and (max-width: 1024px){
+  .componentBody {
+    width: 100%;
+  }
+
+}
+
+@media screen and (max-width: 720px){
+  .card-text {
+    font-size: 3vw;
+  }
+  .list-group {
+    font-size: 3vw;
   }
 }
