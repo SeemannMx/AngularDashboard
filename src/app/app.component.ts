@@ -12,6 +12,7 @@ export class AppComponent {
   // declaration of variables
   title = 'Economic Dashboard';
   version = 'Version 0.1';
+  creator = 'Tino Kallinich';
 
   ngOnInit(){
   }

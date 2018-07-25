@@ -57,10 +57,16 @@
 
 .footer{
   background-color: whitesmoke;
-  padding: 0.5vw;
+  padding-top: 0.8vw;
+  padding-bottom: 0.1vw;
   font-size: 0.7vw;
   color: lightgray;
 }
+
+.footerText {
+  text-align: center;
+}
+
 
 #right {
   /*margin-right: 2vw;*/
@@ -97,5 +103,8 @@
   }
   .footer {
     font-size: 2vw;
+  }
+  .componentBody{
+    margin-top: 10vw;
   }
 }
