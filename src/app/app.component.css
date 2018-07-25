@@ -55,6 +55,14 @@
 
 }
 
+.diagramCanvas {
+  height: 24vw;
+  margin-top: 1vw;
+  background-color: lavenderblush;
+  border: 1px solid whitesmoke;
+  border-radius: 0.5vw;
+}
+
 .footer{
   background-color: whitesmoke;
   padding-top: 0.8vw;
