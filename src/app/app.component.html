@@ -4,9 +4,8 @@
 
   <meta charset="utf-8" name="viewport" content="width=device-width, initial-scale=1.0">
 
-
-
-    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+  <!-- Navigational Bar -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
       <a class="navbar-brand" href="#">{{ title }}</a>
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -21,9 +20,11 @@
   <!-- Progressbar animated -->
   <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 40%"></div>
 
+  <!-- 4 Rows seperated -->
   <div class="row">
 
-          <div class="col-sm-3" id="left">
+    <!-- Menu or List if Detials -->
+    <div class="col-sm-3" id="left">
             <div class="list-group" >
               <a href="#" class="list-group-item list-group-item-action" data-toggle="collapse" data-target="#text1">1</a>
                 <div id="text1" class="collapse"> text </div>
@@ -82,31 +83,32 @@
             </div>
           </div>
 
-          <div class="col-sm-3">
-            <div class="card">
+            <!-- Secition of Card 1, Card 2 and Diagramm 1 -->
+            <div class="col-sm-3">
+                    <div class="card">
 
-              <div class="card-body shadow-sm p-4 mb-4 bg-white">
-                <p class="card-text"> card 1 heading</p>
-                <p class="card-sub-text" id="card1text"> card 1 text</p>
-              </div>
+                      <div class="card-body shadow-sm p-4 mb-4 bg-white">
+                        <p class="card-text"> card 1 heading</p>
+                        <p class="card-sub-text" id="card1text"> card 1 text</p>
+                      </div>
 
-              <div class="card-body shadow-sm p-4 mb-4 bg-white">
-                <p class="card-text"> card 2 heading</p>
-                <p class="card-sub-text" id="card2text"> card 2 text</p>
-              </div>
+                      <div class="card-body shadow-sm p-4 mb-4 bg-white">
+                        <p class="card-text"> card 2 heading</p>
+                        <p class="card-sub-text" id="card2text"> card 2 text</p>
+                      </div>
 
-              <!-- digramm 1 -->
-              <div class="diagramCanvas">
-                <p class="diagrammText">diagramm 1 heading</p>
-                <canvas id="diagramm1">
+                      <!-- digramm 1 -->
+                      <div class="diagramCanvas">
+                        <p class="diagrammText">diagramm 1 heading</p>
+                        <canvas id="diagramm1">
 
-                </canvas>
-              </div>
+                        </canvas>
+                      </div>
 
-            </div>
-          </div>
+                    </div>
+                  </div>
 
-
+          <!-- Secition of Card 3, Card 4 and Diagramm 2 -->
           <div class="col-sm-3">
 
             <div class="card">
@@ -131,32 +133,30 @@
             </div>
           </div>
 
+          <!-- Secition of Card 5, Card 6 and Diagramm 3 -->
           <div class="col-sm-3" >
+                  <div class="card" id="right">
 
-            <div class="card" id="right">
+                    <div class="card-body shadow-sm p-4 mb-4 bg-white">
+                      <p class="card-text"> card 5 heading</p>
+                      <p class="card-sub-text" id="card5text"> card 5 text</p>
+                    </div>
 
-              <div class="card-body shadow-sm p-4 mb-4 bg-white">
-                <p class="card-text"> card 5 heading</p>
-                <p class="card-sub-text" id="card5text"> card 5 text</p>              </div>
+                    <div class="card-body shadow-sm p-4 mb-4 bg-white">
+                      <p class="card-text"> card 6 heading</p>
+                      <p class="card-sub-text" id="card6text"> card 6 text</p>
+                    </div>
 
-              <div class="card-body shadow-sm p-4 mb-4 bg-white">
-                <p class="card-text"> card 6 heading</p>
-                <p class="card-sub-text" id="card6text"> card 7 text</p>
-              </div>
+                    <!-- digramm 3 -->
+                    <div class="diagramCanvas">
+                      <p class="diagrammText">diagramm 3 heading</p>
+                      <canvas id="diagramm3">
 
-              <!-- digramm 3 -->
-              <div class="diagramCanvas">
-                <p class="diagrammText">diagramm 3 heading</p>
-                <canvas id="diagramm3">
-
-                </canvas>
-              </div>
-
-            </div>
+                      </canvas>
+                    </div>
+                  </div>
           </div>
-
     </div>
-
 </div>
 
 <footer class="footer">
