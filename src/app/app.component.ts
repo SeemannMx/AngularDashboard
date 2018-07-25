@@ -11,6 +11,7 @@ export class AppComponent {
 
   // declaration of variables
   title = 'Dashboard';
+  details = 'Details';
 
   ngOnInit(){
   }
