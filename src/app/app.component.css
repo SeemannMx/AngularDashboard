@@ -45,6 +45,10 @@
 
 }
 
+.card-text {
+ text-align: center;
+}
+
 #right {
   /*margin-right: 2vw;*/
 }
