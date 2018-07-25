@@ -14,12 +14,13 @@
 }
 
 .list-group {
+  height: 80vh;
   margin-left: 2vw;
   margin-right: 2vw;
-  margin-top: 1vw;
+  margin-top: 2vw;
   margin-bottom: 1vw;
   color: white;
-
+  overflow-y: scroll;
 }
 
 .collapse {
@@ -32,7 +33,7 @@
 
 .card {
   /*background-color: lightcyan;*/
-  margin-top: 1vw;
+  margin-top: 1.3vw;
   margin-left: 2vw;
   margin-right: 2vw;
   border: 1px solid transparent;
@@ -52,13 +53,13 @@
   font-size: 1.1vw;
   font-family: Courier New, sans-serif;
   color: #979797;
+  white-space: pre-line;
+
 }
 
 .card-sub-text {
   font-size: 0.9vw;
 }
-
-
 
 .diagramCanvas {
   height: 24vw;
@@ -118,6 +119,10 @@
 }
 
 @media screen and (max-width: 720px){
+
+  .card-body {
+    height: auto;
+  }
   .card-text {
     font-size: 3vw;
   }
@@ -127,6 +132,10 @@
   .list-group {
     font-size: 3vw;
   }
+  .card-sub-text {
+    font-size: 2.5vw;
+  }
+
   .footer {
     font-size: 2vw;
   }
