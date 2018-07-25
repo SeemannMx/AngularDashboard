@@ -17,12 +17,13 @@ h1 {
   margin-right: 2vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
-
+  border-left: 1px solid darkgray;
 }
 
 .card {
   background-color: lightcyan;
   margin-top: 1vw;
+  margin-left: 2vw;
 }
 
 .card-body {
@@ -30,10 +31,15 @@ h1 {
   height: 8vw;
   background-color: whitesmoke;
   border: 1px solid blueviolet;
-  border-radius: 8px;
+  border-radius: 0.5vw;
 
 }
 
 #right {
   margin-right: 2vw;
 }
+
+#left {
+  border-right: 1px solid darkgray;
+}
+
