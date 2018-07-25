@@ -47,9 +47,11 @@
   border-radius: 0.5vw;
 }
 
+
 .card-text {
   text-align: center;
-  font-size: 1.2vw;
+  font-size: 1.1vw;
+  font-family: Courier New, sans-serif;
 
 }
 
