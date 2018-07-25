@@ -32,6 +32,8 @@
   background-color: lightcyan;
   margin-top: 1vw;
   margin-left: 2vw;
+  margin-right: 2vw;
+
 }
 
 .card-body {
@@ -44,7 +46,7 @@
 }
 
 #right {
-  margin-right: 2vw;
+  /*margin-right: 2vw;*/
 }
 
 #left {
