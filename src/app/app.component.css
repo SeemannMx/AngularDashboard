@@ -1,11 +1,12 @@
-/* Dashboard */
-.container-fluid {
-  background-color: lightblue;
+/* Dashboard Navbar */
+.navbar-brand {
+  font-size: 2vw;
+  margin-left: 1.5vw;
 }
 
-h1 {
-  font-size: 3vw;
-  margin:1.2vw;
+
+.row {
+  margin-top: 4.5vw;
 }
 
 .col-sm-3 {
