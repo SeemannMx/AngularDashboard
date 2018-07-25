@@ -10,7 +10,7 @@
 }
 
 .col-sm-3 {
-  background-color: lightseagreen;
+  /*background-color: lightseagreen;*/
 }
 
 .list-group {
@@ -18,29 +18,31 @@
   margin-right: 2vw;
   margin-top: 1vw;
   margin-bottom: 1vw;
-  border-left: 1px solid darkgray;
+  color: white;
+
 }
 
 .collapse {
   padding: 0.5vw;
-  padding-left: 3vw;
-  background-color: ghostwhite;
-
+  color: white;
+  animation-name: collapseAnim;
+  animation-fill-mode: forwards;
+  animation-duration: 0.2s;
 }
 
 .card {
-  background-color: lightcyan;
+  /*background-color: lightcyan;*/
   margin-top: 1vw;
   margin-left: 2vw;
   margin-right: 2vw;
-
+  border: 1px solid transparent;
 }
 
 .card-body {
   margin: 0.5vw;
   height: 8vw;
-  background-color: whitesmoke;
-  border: 1px solid blueviolet;
+  /*background-color: lightsteelblue;*/
+  border: 1px solid whitesmoke;
   border-radius: 0.5vw;
 
 }
@@ -57,3 +59,13 @@
   border-right: 1px solid darkgray;
 }
 
+@keyframes collapseAnim {
+  from {
+        padding-left: 0vw;
+        color: white;
+  }
+  to {
+    padding-left: 3vw;
+    color: lightskyblue;
+  }
+}
