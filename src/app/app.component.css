@@ -55,6 +55,13 @@
 
 }
 
+.footer{
+  background-color: whitesmoke;
+  padding: 0.5vw;
+  font-size: 0.7vw;
+  color: lightgray;
+}
+
 #right {
   /*margin-right: 2vw;*/
 }
@@ -87,5 +94,8 @@
   }
   .list-group {
     font-size: 3vw;
+  }
+  .footer {
+    font-size: 2vw;
   }
 }

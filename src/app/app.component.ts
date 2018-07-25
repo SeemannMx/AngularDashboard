@@ -10,8 +10,8 @@ import { log        } from "util";
 export class AppComponent {
 
   // declaration of variables
-  title = 'Dashboard';
-  details = 'Details';
+  title = 'Economic Dashboard';
+  version = 'Version 0.1';
 
   ngOnInit(){
   }
