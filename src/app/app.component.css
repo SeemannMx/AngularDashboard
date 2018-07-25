@@ -48,13 +48,18 @@
 }
 
 
-.card-text {
+.card-text, .card-sub-text {
   text-align: center;
   font-size: 1.1vw;
   font-family: Courier New, sans-serif;
   color: #979797;
-
 }
+
+.card-sub-text {
+  font-size: 0.9vw;
+}
+
+
 
 .diagramCanvas {
   height: 24vw;
