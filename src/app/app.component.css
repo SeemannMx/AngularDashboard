@@ -20,6 +20,13 @@ h1 {
   border-left: 1px solid darkgray;
 }
 
+.collapse {
+  padding: 0.5vw;
+  padding-left: 3vw;
+  background-color: ghostwhite;
+
+}
+
 .card {
   background-color: lightcyan;
   margin-top: 1vw;
