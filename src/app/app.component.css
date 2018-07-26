@@ -16,7 +16,7 @@
 .list-group {
   height: 80vh;
   margin-left: 2vw;
-  margin-right: 2vw;
+  margin-right: 1vw;
   margin-top: 2vw;
   margin-bottom: 1vw;
   color: white;
@@ -34,8 +34,8 @@
 .card {
   /*background-color: lightcyan;*/
   margin-top: 1.3vw;
-  margin-left: 2vw;
-  margin-right: 2vw;
+  margin-left: 1vw;
+  margin-right: 1vw;
   border: 1px solid transparent;
 }
 
@@ -43,7 +43,7 @@
   margin: 0.5vw;
   height: 8vw;
   /*background-color: lightsteelblue;*/
-  border: 1px solid whitesmoke;
+  border: 1px solid darkgray;
   border-radius: 0.5vw;
 }
 
