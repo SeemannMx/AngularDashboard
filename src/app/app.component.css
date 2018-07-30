@@ -21,6 +21,7 @@
   margin-bottom: 1vw;
   color: white;
   overflow-y: scroll;
+  font-size: 1vw;
 }
 
 .collapse {
@@ -64,7 +65,7 @@
 .diagramCanvas {
   height: 24vw;
   margin-top: 1vw;
-  background-color: lavenderblush;
+  /* background-color: lavenderblush;*/
   border: 1px solid whitesmoke;
   border-radius: 0.5vw;
   font-family: Courier New, sans-serif;
@@ -75,7 +76,7 @@
 }
 
 #diagramm1, #diagramm2, #diagramm3 {
-  background-color: lavender;
+  /*background-color: lavender;*/
   width: 100%;
 }
 
@@ -93,7 +94,7 @@
 
 
 #right {
-  /*margin-right: 2vw;*/
+  margin-right: 4vw;
 }
 
 #left {
