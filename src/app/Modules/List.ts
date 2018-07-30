@@ -1,6 +1,11 @@
 export class List {
   text1: string;
 
+  /**
+   * provide text for list in html
+   * @param {number} id
+   * @returns {string}
+   */
     getText(id:number): string{
       var result: string;
 
