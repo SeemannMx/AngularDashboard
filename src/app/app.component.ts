@@ -1,7 +1,8 @@
 import {Component, OnInit} from '@angular/core';
 import { log        } from "util";
 import {List} from "./Modules/List";
-import {text} from "@angular/core/src/render3/instructions";
+import {HttpClient, HttpClientModule} from "@angular/common/http";
+import * as url from "url";
 
 @Component({
   selector: 'app-root',
@@ -16,7 +17,7 @@ export class AppComponent implements OnInit{
   version = 'Version 0.1';
   creator = 'Tino Kallinich';
 
-  // List Details
+  // List Details ss
   list: List;
   text1;
   text2;
@@ -39,10 +40,24 @@ export class AppComponent implements OnInit{
 
 
   ngOnInit(){
+
+    var url= 'https://github.com/SeemannMx/rest_ameco_01/blob/master/db.json';
+
+    // make rest request
+    this.httpClient.get(url).subscribe((data) => {
+      console.log(data);
+    })
   }
 
-  constructor() {
+  constructor(private httpClient: HttpClient) {
     log("app compo constructor, start hello ");
+
+    this.setText();
+
+  }
+
+  // fill list with details
+  setText(){
     this.list = new List();
 
     this.text1 =  this.list.getText(1);
@@ -63,6 +78,5 @@ export class AppComponent implements OnInit{
     this.text16 =  this.list.getText(16);
     this.text17 =  this.list.getText(17);
     this.text18 =  this.list.getText(18);
-
   }
 }

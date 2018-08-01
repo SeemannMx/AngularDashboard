@@ -1,0 +1,17 @@
+{
+  "value1":[9],
+  "value2":[8],
+  "value3":[7],
+  "value4":[6],
+  "value5":[5],
+  "value6":[4],
+  "diagramm1":[{
+      "value_diagramm_1": [1, 2, 3, 4]
+    }],
+  "diagramm2":[{
+      "value_diagramm_1": [1, 2, 3, 4]
+  }],
+  "diagramm3":[{
+      "value_diagramm_1": [1, 2, 3, 4]
+  }]
+}
