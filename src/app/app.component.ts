@@ -52,7 +52,8 @@ export class AppComponent implements OnInit{
         var dataToString = JSON.stringify(data);
         var stringToJson = JSON.parse(dataToString);
 
-        var value1 = stringToJson.ameco01.population[0];
+        // var value1 = stringToJson.ameco01.population[0];
+        var value1 = stringToJson.Ameco01[0].population;
 
         // set data value in component variable
         console.log("Test Ameco01 " + value1);
