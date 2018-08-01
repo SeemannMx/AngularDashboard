@@ -50,12 +50,12 @@ export class AppComponent implements OnInit{
 
         // convert data
         var dataToString = JSON.stringify(data);
-        var StringToJson = JSON.parse(dataToString);
+        var stringToJson = JSON.parse(dataToString);
 
-        var value1 = StringToJson.value1;
+        var value1 = stringToJson.ameco01.population[0];
 
         // set data value in component variable
-        console.log("Test" + value1);
+        console.log("Test Ameco01 " + value1);
         this.card1Text = value1;
 
       });
