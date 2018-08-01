@@ -17,6 +17,8 @@ export class AppComponent implements OnInit{
   version = 'Version 0.1';
   creator = 'Tino Kallinich';
 
+  card1Text:String;
+
   // List Details ss
   list: List;
   text1;
@@ -41,9 +43,21 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
 
+    // get data from assets folder data.json
     this.http.get('http://localhost:4200/assets/data.json')
       .subscribe(data => {
-        console.log(data)
+        console.log(data);
+
+        // convert data
+        var dataToString = JSON.stringify(data);
+        var StringToJson = JSON.parse(dataToString);
+
+        var value1 = StringToJson.value1;
+
+        // set data value in component variable
+        console.log("Test" + value1);
+        this.card1Text = value1;
+
       });
 
 

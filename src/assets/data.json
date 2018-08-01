@@ -1,10 +1,7 @@
 {
-  "value1":[9],
-  "value2":[8],
-  "value3":[7],
-  "value4":[6],
-  "value5":[5],
-  "value6":[4],
+  "value1":9,
+  "value2":8,
+
   "diagramm1":[{
       "value_diagramm_1": [1, 2, 3, 4]
     }],
@@ -13,5 +10,8 @@
   }],
   "diagramm3":[{
       "value_diagramm_1": [1, 2, 3, 4]
-  }]
+  }],
+
+  "json": ["{\"TAG\":\"AMECO_1 \",\"country\":\"Germany\",\"subChapter\":\"01 Population\",\"title\":\"Total population (National accounts) \",\"unit\":\"1000 persons\",\"year2018\":\"82952\"}","{\"TAG\":\"AMECO_1 \",\"country\":\"Germany\",\"subChapter\":\"02 Labour force statistics\",\"title\":\"Total labour force (Labour force statistics) \",\"unit\":\"1000 persons\",\"year2018\":\"46177\"}","{\"TAG\":\"AMECO_1 \",\"country\":\"Germany\",\"subChapter\":\"04 Employment, persons (national accounts)\",\"title\":\"Employment, persons: total economy (National accounts) \",\"unit\":\"1000 persons\",\"year2018\":\"44632\"}","{\"TAG\":\"AMECO_1 \",\"country\":\"Germany\",\"subChapter\":\"03 Unemployment\",\"title\":\"Total unemployment :- Member States: definition EUROSTAT \",\"unit\":\"1000 persons\",\"year2018\":\"1545\"}"]
+
 }
