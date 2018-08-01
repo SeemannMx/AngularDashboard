@@ -41,15 +41,15 @@ export class AppComponent implements OnInit{
 
   ngOnInit(){
 
-    var url= 'https://github.com/SeemannMx/rest_ameco_01/blob/master/db.json';
+    this.http.get('http://localhost:4200/assets/data.json')
+      .subscribe(data => {
+        console.log(data)
+      });
 
-    // make rest request
-    this.httpClient.get(url).subscribe((data) => {
-      console.log(data);
-    })
+
   }
 
-  constructor(private httpClient: HttpClient) {
+  constructor(private http: HttpClient) {
     log("app compo constructor, start hello ");
 
     this.setText();
