@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
-import { log        } from "util";
+import {log} from "util";
 import {List} from "./Modules/List";
-import {HttpClient, HttpClientModule} from "@angular/common/http";
+import {HttpClient} from "@angular/common/http";
 import * as url from "url";
 
 @Component({
@@ -44,7 +44,7 @@ export class AppComponent implements OnInit{
   ngOnInit(){
 
     // get data from assets folder data.json
-    this.http.get('http://localhost:4200/assets/data.json')
+    this.http.get('http://localhost:4200/assets/test.json')
       .subscribe(data => {
         console.log(data);
 
@@ -53,11 +53,11 @@ export class AppComponent implements OnInit{
         var stringToJson = JSON.parse(dataToString);
 
         // var value1 = stringToJson.ameco01.population[0];
-        var value1 = stringToJson.Ameco01[0].population;
+        // var value1 = stringToJson.Ameco01[0].population;
 
         // set data value in component variable
-        console.log("Test Ameco01 " + value1);
-        this.card1Text = value1;
+        // console.log("Test Ameco01 " + value1);
+        // this.card1Text = value1;
 
       });
 

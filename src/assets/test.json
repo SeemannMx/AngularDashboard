@@ -1,0 +1,20 @@
+{"data":[
+
+  {"Ameco01":[{"population":"82952"},{"totalLaborForce":"46177"},{"employedPersons":"44632"},{"unEmployedPersons":"1545"}]},
+  {"Ameco02":[{"consumption":"2458.195"}]},
+  {"Ameco03":[{"savings":"801.9467"}]},
+  {"Ameco04":[{"demand":"4784.160"}]},
+  {"Ameco05":[{"income":"2865.580"}]},
+  {"Ameco06":[{"hour":"1354.710"},{"domesticIncome":"2804.312"}]},
+  {"Ameco07":[{"compensation":"1738.388"},{"nominalCompensation":"42.99068"}]},
+  {"Ameco09":[{"export2010":"1546.637"},{"import2010":"1335.109"},{"exportCurrent":"1359.418"},{"importCurrent":"1082.329"}]},
+  {"Ameco10":[{"balance":"266.9851"},{"netLending":"263.6218"}]},
+  {"Ameco11":[{"exportGoods":"1368.718"},{"importGoods":"1111.194"}]},
+  {"Ameco12":[{"serviceCompentsation":"1138.336"},{"manufacturCompentsation":"405.0680"}]},
+  {"Ameco13":[{"nominalShortIntrest":"0.5700000"},{"realShortIntrest":"-0.9555754"}, {"nominalLongIntrest":"1.5000000"},{"realLongIntrest":"-0.0396828"}]},
+  {"Ameco14":[{"incomeTaxCoop":"70.01700"},{"incomeDisposableCoop":"108.7540"},{"savingCoop":"60.8160"}]},
+  {"Ameco15":[{"transferToPrivate":"569.2620"},{"incomeTaxPrivate":"244.8240"},{"nonLaborIncome":"715.4850"}]},
+  {"Ameco17":[{"oneOff17":"0.0"}]},
+  {"Ameco18":[{"govermentDept":"2202.3"}]}
+
+]}
