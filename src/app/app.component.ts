@@ -2,7 +2,8 @@ import {Component, OnInit} from '@angular/core';
 import {log} from "util";
 import {List} from "./Modules/List";
 import {HttpClient} from "@angular/common/http";
-import * as url from "url";
+import * as $ from 'jquery';
+
 
 @Component({
   selector: 'app-root',
@@ -23,7 +24,6 @@ export class AppComponent implements OnInit{
   card4Text:String;
   card5Text:String;
   card6Text:String;
-
 
   // List Details ss
   list: List;
@@ -46,6 +46,12 @@ export class AppComponent implements OnInit{
   text17:String;
   text18:String;
 
+  id = 'chart1';
+  width = 600;
+  height = 400;
+  type = 'column2d';
+  dataFormat = 'json';
+  dataSource;
 
   ngOnInit(){
 
@@ -86,19 +92,17 @@ export class AppComponent implements OnInit{
         this.card6Text = dept + " Mrd. €";
 
       });
-
-
   }
 
   constructor(private http: HttpClient) {
     log("app compo constructor, start hello ");
 
     this.setText();
-
+    this.run();
   }
 
   // fill list with details
-  setText(){
+  private setText(){
     this.list = new List();
 
     this.text1 =  this.list.getText(1);
@@ -120,4 +124,58 @@ export class AppComponent implements OnInit{
     this.text17 =  this.list.getText(17);
     this.text18 =  this.list.getText(18);
   }
+
+  public run(){
+
+    var getInnerWidth = window.innerWidth / 1.45;
+    console.log("inner width: " + getInnerWidth);
+    var getInnerHight = window.outerHeight / 2;
+    console.log("outer height: " + getInnerHight);
+
+    this.width = getInnerWidth
+    this.height = getInnerHight;
+
+    // build diagramms
+    console.log("start buildDiagramm 1");
+
+    this.dataSource = {
+      "chart": {
+        "caption": "Corporate Tax",
+        "subCaption": "",
+        "numbersuffix": " Mio. € ",
+        "theme": "fint"
+      },
+      "data": [
+        {
+          "label": "2008",
+          "value": "880.000.000"
+        },
+        {
+          "label": "2010",
+          "value": "730.000.000"
+        },
+        {
+          "label": "2012",
+          "value": "690.000.000"
+        },
+        {
+          "label": "2014",
+          "value": "600.000.000"
+        },
+        {
+          "label": "2016",
+          "value": "600.000.000"
+        },
+        {
+          "label": "2018",
+          "value": "540.000.000"
+        }
+      ]
+    }
+
+    console.log("end buildDiagramm 1");
+
+  }
+
+
 }

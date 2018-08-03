@@ -97,12 +97,19 @@
                       </div>
 
                       <!-- digramm 1 -->
-                      <div class="diagramCanvas">
+                      <div class="diagramCanvas" hidden>
                         <p class="diagrammText">diagramm 1 heading</p>
-                        <canvas id="diagramm1">
-
-                        </canvas>
+                        <canvas id="diagramm1"></canvas>
                       </div>
+
+                      <fusioncharts id="fusionChart"
+                                    [id]="id"
+                                    [width]="width"
+                                    [height]="height"
+                                    [type]="type"
+                                    [dataFormat]="dataFormat"
+                                    [dataSource]="dataSource"
+                      ></fusioncharts>
 
                     </div>
                   </div>
@@ -122,7 +129,7 @@
               </div>
 
               <!-- digramm 2 -->
-              <div class="diagramCanvas">
+              <div class="diagramCanvas" hidden>
                 <p class="diagrammText">diagramm 2 heading</p>
                 <canvas id="diagramm2">
 
@@ -147,7 +154,7 @@
                     </div>
 
                     <!-- digramm 3 -->
-                    <div class="diagramCanvas">
+                    <div class="diagramCanvas" hidden>
                       <p class="diagrammText">diagramm 3 heading</p>
                       <canvas id="diagramm3">
 
@@ -155,6 +162,12 @@
                     </div>
                   </div>
           </div>
+
+
+
+
+
+
     </div>
 </div>
 

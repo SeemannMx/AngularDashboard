@@ -54,7 +54,8 @@
   text-align: center;
   font-size: 1.1vw;
   font-family: Courier New, sans-serif;
-  color: #979797;
+  /* color: #979797; */
+  color: black;
   white-space: pre-line;
 
 }
@@ -79,6 +80,10 @@
 #diagramm1, #diagramm2, #diagramm3 {
   /*background-color: lavender;*/
   width: 100%;
+}
+
+#fusionChart{
+
 }
 
 .footer{
