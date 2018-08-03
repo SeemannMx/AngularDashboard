@@ -55,9 +55,28 @@ export class AppComponent implements OnInit{
         // var value1 = stringToJson.ameco01.population[0];
         // var value1 = stringToJson.Ameco01[0].population;
 
+        var value1 = stringToJson.data[0].Ameco01[0].population;
+        console.log("Ameco01 populataion: " + value1);
+
+        var value2 = stringToJson.data[0].Ameco01[1].totalLaborForce;
+        console.log("Ameco01 total labor force" + value2);
+
+        var value3 = stringToJson.data[4].Ameco05[0].income;
+        console.log("Ameco05 income " + value3);
+
+        var value4 = stringToJson.data[2].Ameco03[0].savings;
+        console.log("Ameco03 saving " + value4);
+
+        var value5 = stringToJson.data[11].Ameco13[3].realLongIntrest;
+        console.log("Ameco13 real instrest long " + value5);
+
+        // govermentDept
+        var value6 = stringToJson.data[15].Ameco18[0].govermentDept;
+        console.log("Ameco18 goverment dept " + value6);
+
         // set data value in component variable
         // console.log("Test Ameco01 " + value1);
-        // this.card1Text = value1;
+        this.card1Text = value1;
 
       });
 
