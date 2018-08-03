@@ -18,27 +18,33 @@ export class AppComponent implements OnInit{
   creator = 'Tino Kallinich';
 
   card1Text:String;
+  card2Text:String;
+  card3Text:String;
+  card4Text:String;
+  card5Text:String;
+  card6Text:String;
+
 
   // List Details ss
   list: List;
-  text1;
-  text2;
-  text3;
-  text4;
-  text5;
-  text6;
-  text7;
-  text8;
-  text9;
-  text10;
-  text11;
-  text12;
-  text13;
-  text14;
-  text15;
-  text16;
-  text17;
-  text18;
+  text1:String;
+  text2:String;
+  text3:String;
+  text4:String;
+  text5:String;
+  text6:String;
+  text7:String;
+  text8:String;
+  text9:String;
+  text10:String;
+  text11:String;
+  text12:String;
+  text13:String;
+  text14:String;
+  text15:String;
+  text16:String;
+  text17:String;
+  text18:String;
 
 
   ngOnInit(){
@@ -52,31 +58,32 @@ export class AppComponent implements OnInit{
         var dataToString = JSON.stringify(data);
         var stringToJson = JSON.parse(dataToString);
 
-        // var value1 = stringToJson.ameco01.population[0];
-        // var value1 = stringToJson.Ameco01[0].population;
+        var population = stringToJson.data[0].Ameco01[0].population;
+        console.log("Ameco01 populataion: " + population);
 
-        var value1 = stringToJson.data[0].Ameco01[0].population;
-        console.log("Ameco01 populataion: " + value1);
+        var totalLaborForce = stringToJson.data[0].Ameco01[1].totalLaborForce;
+        console.log("Ameco01 total labor force" + totalLaborForce);
 
-        var value2 = stringToJson.data[0].Ameco01[1].totalLaborForce;
-        console.log("Ameco01 total labor force" + value2);
+        var income = stringToJson.data[4].Ameco05[0].income;
+        console.log("Ameco05 income " + income);
 
-        var value3 = stringToJson.data[4].Ameco05[0].income;
-        console.log("Ameco05 income " + value3);
+        var savings = stringToJson.data[2].Ameco03[0].savings;
+        console.log("Ameco03 saving " + savings);
 
-        var value4 = stringToJson.data[2].Ameco03[0].savings;
-        console.log("Ameco03 saving " + value4);
-
-        var value5 = stringToJson.data[11].Ameco13[3].realLongIntrest;
-        console.log("Ameco13 real instrest long " + value5);
+        var intrest = stringToJson.data[11].Ameco13[3].realLongIntrest;
+        console.log("Ameco13 real instrest long " + intrest);
 
         // govermentDept
-        var value6 = stringToJson.data[15].Ameco18[0].govermentDept;
-        console.log("Ameco18 goverment dept " + value6);
+        var dept = stringToJson.data[15].Ameco18[0].govermentDept;
+        console.log("Ameco18 goverment dept " + dept);
 
         // set data value in component variable
-        // console.log("Test Ameco01 " + value1);
-        this.card1Text = value1;
+        this.card1Text = population + "000 persons";
+        this.card2Text = savings + " Mrd. €";
+        this.card3Text = totalLaborForce + "000 persons";
+        this.card4Text = intrest + " %";
+        this.card5Text = income  + " Mrd. €";
+        this.card6Text = dept + " Mrd. €";
 
       });
 
