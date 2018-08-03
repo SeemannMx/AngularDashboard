@@ -2,8 +2,6 @@ import {Component, OnInit} from '@angular/core';
 import {log} from "util";
 import {List} from "./Modules/List";
 import {HttpClient} from "@angular/common/http";
-import * as $ from 'jquery';
-
 
 @Component({
   selector: 'app-root',
@@ -126,6 +124,8 @@ export class AppComponent implements OnInit{
   }
 
   public run(){
+
+    // build fuison charts https://www.fusioncharts.com/dev/
 
     var getInnerWidth = window.innerWidth / 1.45;
     console.log("inner width: " + getInnerWidth);
